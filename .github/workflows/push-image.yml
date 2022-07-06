@@ -29,10 +29,10 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      - name: Clone near contract helper
+      - name: Clone liquality-evm-refund
         uses: actions/checkout@v2
         with:
-          repository: liquality-evm-refund.git
+          repository: liquality/liquality-evm-refund.git
           ref: 'master'
           
       - name: Log in to the Container registry
