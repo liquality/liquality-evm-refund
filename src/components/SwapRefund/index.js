@@ -30,6 +30,36 @@ init({
       label: "Ethereum Mainnet",
       rpcUrl: ChainNetworks.ethereum.mainnet.rpcUrl,
     },
+    {
+      id: "0x1E",
+      token: "RBTC",
+      label: "RSK Mainnet",
+      rpcUrl: ChainNetworks.rsk.mainnet.rpcUrl,
+    },
+    {
+      id: "0x38",
+      token: "BNB",
+      label: "Binance Smart Chain",
+      rpcUrl: ChainNetworks.bsc.mainnet.rpcUrl,
+    },
+    {
+      id: "0xA86A",
+      token: "AVAX",
+      label: "Avalanche",
+      rpcUrl: ChainNetworks.avalanche.mainnet.rpcUrl,
+    },
+    {
+      id: "0xA4B1",
+      token: "ARBETH",
+      label: "Arbitrum",
+      rpcUrl: ChainNetworks.arbitrum.mainnet.rpcUrl,
+    },
+    {
+      id: "0x89",
+      token: "MATIC",
+      label: "Matic",
+      rpcUrl: ChainNetworks.polygon.mainnet.rpcUrl,
+    },
   ],
 });
 
@@ -129,6 +159,9 @@ export default function Refund() {
           );
           const signer = injectedProvider.getSigner();
 
+          
+
+          console.log("ID:", htlc.id);
           const tx = await refund(htlc.id, signer);
           console.log("TX ", tx);
         }
@@ -184,7 +217,7 @@ export default function Refund() {
             </p>
           </div>
         ) : (
-          "Already Completed"
+          <strong>Already Completed</strong>
         )}
       </BrandCard>
       <div className="SwapRefund_expiredFrame">
