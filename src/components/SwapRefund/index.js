@@ -159,8 +159,6 @@ export default function Refund() {
           );
           const signer = injectedProvider.getSigner();
 
-          
-
           console.log("ID:", htlc.id);
           const tx = await refund(htlc.id, signer);
           console.log("TX ", tx);

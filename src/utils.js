@@ -53,5 +53,6 @@ export const refund = async (id, provider) => {
     provider
   );
 
-  return await contract.refund(id);
+  const result = await contract.populateTransaction.refund(id);
+  return await provider.sendTransaction({ ...result, gasLimit: "120000" });
 };
