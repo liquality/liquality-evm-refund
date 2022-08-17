@@ -34,12 +34,12 @@ jobs:
         with:
           repository: liquality/liquality-evm-refund.git
           ref: 'master'
-  
-      - name: Install Dependencies
-        run: yarn install
+  # no build because - we are getting FATAL ERROR: Reached heap limit Allocation failed - JavaScript heap out of memory
+      # - name: Install Dependencies
+      #   run: yarn install
 
-      - name: Build
-        run: yarn build     
+      # - name: Build
+      #   run: yarn build     
   
       - name: Log in to the Container registry
         uses: docker/login-action@f054a8b539a109f9f41c372932f1ae047eff08c9
