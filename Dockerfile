@@ -8,5 +8,5 @@ WORKDIR /app
 COPY package.json .
 COPY build/ .
 RUN yarn global add serve
-EXPOSE 3000
+EXPOSE 8080
 CMD [ "yarn","serve" ]

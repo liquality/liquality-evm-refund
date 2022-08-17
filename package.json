@@ -27,7 +27,7 @@
   "scripts": {
     "start": "GENERATE_SOURCEMAP=false react-app-rewired start",
     "build": "react-app-rewired build",
-    "serve": "serve -s /app -l tcp://0.0.0.0:3000",
+    "serve": "serve -s /app -l tcp://0.0.0.0:8080",
     "test": "react-app-rewired test",
     "eject": "react-scripts eject"
   },
