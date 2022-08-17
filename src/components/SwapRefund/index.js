@@ -9,7 +9,7 @@ import injectedModule, { ProviderLabel } from "@web3-onboard/injected-wallets";
 import { ethers } from "ethers";
 import { useEffect, useMemo, useState } from "react";
 import dayjs from "dayjs";
-import { ChainNetworks } from "@liquality/wallet-core/dist/utils/networks";
+import { ChainNetworks } from "@liquality/wallet-core/dist/src/utils/networks";
 import TxNotFound from "../NoTxFound";
 import ErrorModal from "../ErrorModal";
 import Button from "../Button";
