@@ -26,6 +26,7 @@
   "scripts": {
     "start": "GENERATE_SOURCEMAP=false react-app-rewired start",
     "build": "react-app-rewired build",
+    "serve": "serve -s build -l 3000",
     "test": "react-app-rewired test",
     "eject": "react-scripts eject"
   },
